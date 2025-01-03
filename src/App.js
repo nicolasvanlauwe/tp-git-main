@@ -11,7 +11,7 @@ const App = () => {
     fetch('http://localhost:5000/tasks')
       .then((response) => response.json())
       .then((data) => setTasks(data));
-  });
+  },[]);
 
   return (
     <div className="App">
